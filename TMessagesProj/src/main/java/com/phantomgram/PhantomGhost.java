@@ -68,7 +68,7 @@ public class PhantomGhost {
 
         // 4. Intercept Stories stealth view
         if (PhantomConfig.stealthStories && (
-                object instanceof TLRPC.TL_stories_readStories
+                object instanceof org.telegram.tgnet.tl.TL_stories.TL_stories_readStories
         )) {
             if (onComplete != null) {
                 TLRPC.Vector fakeVector = new TLRPC.Vector();
